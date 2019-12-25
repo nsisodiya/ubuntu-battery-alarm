@@ -7,3 +7,5 @@ sudo chmod 644 /etc/systemd/system/ubuntu-battery-status.service
 sudo systemctl start ubuntu-battery-status
 sudo systemctl status ubuntu-battery-status
 sudo systemctl enable ubuntu-battery-status
+journalctl -u ubuntu-battery-status.service -b | tail
+
