@@ -1,0 +1,14 @@
+[0;1;32m●[0m ubuntu-battery-status.service - Make a Beep if Battery is lower than 10%.
+   Loaded: loaded (/etc/systemd/system/ubuntu-battery-status.service; disabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2019-12-25 10:59:52 IST; 5s ago
+ Main PID: 685 (bash)
+    Tasks: 2 (limit: 4915)
+   Memory: 2.1M
+   CGroup: /system.slice/ubuntu-battery-status.service
+           ├─685 /bin/bash /usr/bin/ubuntu-battery-alarm-service.sh
+           └─783 sleep 5
+
+Dec 25 10:59:52 narendra-HP-EliteBook-840-G5 systemd[1]: Started Make a Beep if Battery is lower than 10%..
+Dec 25 10:59:52 narendra-HP-EliteBook-840-G5 cat[693]: Example service started at 2019-12-25 10:59:52
+Dec 25 10:59:52 narendra-HP-EliteBook-840-G5 bash[685]: Cuttent charing level is 31 and Battery is Discharging
+Dec 25 10:59:57 narendra-HP-EliteBook-840-G5 bash[685]: Cuttent charing level is 31 and Battery is Discharging

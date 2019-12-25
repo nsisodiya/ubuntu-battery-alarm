@@ -1,0 +1,9 @@
+[Unit]
+Description=Make a Beep if Battery is lower than 10%.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/ubuntu-battery-alarm-service.sh
+
+[Install]
+WantedBy=multi-user.target
