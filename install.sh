@@ -9,3 +9,7 @@ sudo systemctl status ubuntu-battery-status
 sudo systemctl enable ubuntu-battery-status
 journalctl -u ubuntu-battery-status.service -b | tail
 
+# Uninstall
+
+sudo rm /etc/systemd/system/ubuntu-battery-status.service
+sudo rm /usr/bin/ubuntu-battery-alarm-service.sh 
