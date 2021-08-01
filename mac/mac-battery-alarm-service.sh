@@ -12,5 +12,10 @@ do
             afplay /System/Library/Sounds/Blow.aiff
         fi
     fi
-    sleep 5; 
+
+    if (( charging_level < 5 )); then
+        sleep 2;
+    else
+        sleep 5;
+    fi
 done
